@@ -7,7 +7,9 @@ jsonfile = open('introductions/introductions_1518026373.json').read()
 jsondata = json.loads(jsonfile)
 
 # the HTML header
-htmldata = '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Travis CI test</title>\n<link href="test.css" rel="stylesheet">\n</head>\n<body>'
+head = open('templates/head.html').read()
+header = open('templates/header.html').read()
+htmldata = head + header
 
 if jsondata['ok']:
     for message in jsondata['messages']:
