@@ -1,3 +1,6 @@
+#!/usr/bin/env python2.7
+# -*- coding: utf-8 -*-
+
 import json
 
 jsonfile = open('introductions/introductions_1518026373.json').read()
