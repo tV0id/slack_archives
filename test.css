@@ -3,5 +3,6 @@ body {
 }
 div {
   background-color: #FFF;
-  padding: 4em 1em 4em 1em;
+  padding: 1em;
+  margin: 1em 0.5em 0.5em 1em;
 }
